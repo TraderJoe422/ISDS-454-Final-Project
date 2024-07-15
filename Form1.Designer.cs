@@ -76,6 +76,7 @@
             this.passTxtBox.Name = "passTxtBox";
             this.passTxtBox.Size = new System.Drawing.Size(157, 20);
             this.passTxtBox.TabIndex = 3;
+            this.passTxtBox.UseSystemPasswordChar = true;
             // 
             // logBtn
             // 
@@ -183,6 +184,7 @@
             this.Controls.Add(this.panel1);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

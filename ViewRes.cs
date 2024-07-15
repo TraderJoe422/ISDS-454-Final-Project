@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace ISDS_454_Final_Project
 {
-    public partial class CancelRes : Form
+    public partial class ViewRes : Form
     {
         bool mouseDown;
         int[] roomNumbers = { 100, 101, 102, 103, 104, 105, 200, 201, 202, 203, 204, 205 };
@@ -25,18 +25,16 @@ namespace ISDS_454_Final_Project
         const int START_DATE_ADD_SECONDS = 54000;
         const int END_DATE_ADD_SECONDS = -43199;
 
-
-
         static string constr = @"Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=hotel;Data Source=desktop-19jhtlb\sqlexpress01";
         static SqlConnection con = new SqlConnection(constr);
 
-        public CancelRes()
+        public ViewRes()
         {
             InitializeComponent();
         }
 
         // - POPULATE COMBOBOX -
-        private void CancelRes_Load(object sender, EventArgs e)
+        private void ViewRes_Load(object sender, EventArgs e)
         {
             roomNumbersCB.Items.Clear();
             for (int i = 0; i < roomNumbers.Length; i++)
@@ -52,9 +50,9 @@ namespace ISDS_454_Final_Project
             roomNumLbl.Text = roomNumbersCB.Text;
         }
 
+
         private void searchRecordBtn_Click(object sender, EventArgs e)
         {
-
             if (firstNameTxtBox.Text == "" || lastNameTxtBox.Text == "" || roomNumLbl.Text == "#")
             {
                 MessageBox.Show("You Must Enter Information", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -78,8 +76,8 @@ namespace ISDS_454_Final_Project
                     recordEndDate = (long)sdr.GetValue(4);
                     DateTimeOffset startDateFromEpoch = DateTimeOffset.FromUnixTimeSeconds(recordStartDate);
                     DateTimeOffset endDateFromEpoch = DateTimeOffset.FromUnixTimeSeconds(recordEndDate);
-                    recordFour.Text = startDateFromEpoch.ToString().Remove(21);
-                    recordFive.Text = endDateFromEpoch.ToString().Remove(22);
+                    recordFour.Text = startDateFromEpoch.ToString().Remove(20);
+                    recordFive.Text = endDateFromEpoch.ToString().Remove(21);
                     //recordFour.Text = sdr.GetValue(3).ToString();
                     //recordFive.Text = sdr.GetValue(4).ToString();
                     recordSix.Text = sdr.GetValue(5).ToString();
@@ -88,7 +86,7 @@ namespace ISDS_454_Final_Project
                 // - DISPLAYING RECORDS -
                 if (recordOne.Text == "")
                 {
-                    MessageBox.Show("Record Doesn't Exist", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Error Searching Records", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
                 else
                 {
@@ -102,27 +100,7 @@ namespace ISDS_454_Final_Project
                 }
                 con.Close();
             }
-
-        }
-
-        // - DELETING RECORD
-        private void deleteBtn_Click(object sender, EventArgs e)
-        {
-            if (recordOne.Text == "")
-            {
-                MessageBox.Show("No Record To Delete", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            else
-            {
-                con.Open();
-                string queryDelete = "DELETE FROM bookings WHERE LastName = '" + lastNameTxtBox.Text + "'" + " AND FirstName = '" + firstNameTxtBox.Text + "'" + " AND Room_Number = " + int.Parse(roomNumLbl.Text);
-                SqlCommand cmd = new SqlCommand(queryDelete, con);
-                cmd.ExecuteNonQuery();
-
-                MessageBox.Show("Record Deleted", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-                con.Close();
-            }
+        
         }
 
         // - EXIT BUTTON -
@@ -137,7 +115,6 @@ namespace ISDS_454_Final_Project
             MenuForm menuForm = new MenuForm();
             menuForm.Show();
             this.Hide();
-
         }
 
 
@@ -162,9 +139,30 @@ namespace ISDS_454_Final_Project
             mouseDown = false;
         }
 
+        // - MINIMIZE BUTTON -
         private void minimizeBtn_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
+        }
+
+        // - CLEAR BUTTON -
+        private void clearBtn_Click(object sender, EventArgs e)
+        {
+            firstNameTxtBox.Clear();
+            lastNameTxtBox.Clear();
+            recordOne.Hide();
+            recordTwo.Hide();
+            recordThree.Hide();
+            recordFour.Hide();
+            recordFive.Hide();
+            recordSix.Hide();
+
+            recordOne.Text = "";
+            recordTwo.Text = "";
+            recordThree.Text = "";
+            recordFour.Text = "";
+            recordFive.Text = "";
+            recordSix.Text = "";
         }
     }
 }

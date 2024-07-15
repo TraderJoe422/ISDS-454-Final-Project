@@ -65,12 +65,14 @@
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
+            this.minimizeBtn = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(76)))), ((int)(((byte)(49)))));
+            this.panel1.Controls.Add(this.minimizeBtn);
             this.panel1.Controls.Add(this.exitBtn);
             this.panel1.Controls.Add(this.panel4);
             this.panel1.Controls.Add(this.hotelNameLbl);
@@ -238,7 +240,7 @@
             // 
             this.confirmationTipLbl.AutoSize = true;
             this.confirmationTipLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.confirmationTipLbl.Location = new System.Drawing.Point(500, 127);
+            this.confirmationTipLbl.Location = new System.Drawing.Point(442, 127);
             this.confirmationTipLbl.Name = "confirmationTipLbl";
             this.confirmationTipLbl.Size = new System.Drawing.Size(134, 13);
             this.confirmationTipLbl.TabIndex = 39;
@@ -247,7 +249,7 @@
             // recordOne
             // 
             this.recordOne.AutoSize = true;
-            this.recordOne.Location = new System.Drawing.Point(358, 177);
+            this.recordOne.Location = new System.Drawing.Point(293, 177);
             this.recordOne.Name = "recordOne";
             this.recordOne.Size = new System.Drawing.Size(0, 13);
             this.recordOne.TabIndex = 40;
@@ -256,7 +258,7 @@
             // deleteBtn
             // 
             this.deleteBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.deleteBtn.Location = new System.Drawing.Point(503, 213);
+            this.deleteBtn.Location = new System.Drawing.Point(445, 226);
             this.deleteBtn.Name = "deleteBtn";
             this.deleteBtn.Size = new System.Drawing.Size(121, 39);
             this.deleteBtn.TabIndex = 41;
@@ -267,7 +269,7 @@
             // recordTwo
             // 
             this.recordTwo.AutoSize = true;
-            this.recordTwo.Location = new System.Drawing.Point(412, 177);
+            this.recordTwo.Location = new System.Drawing.Point(350, 177);
             this.recordTwo.Name = "recordTwo";
             this.recordTwo.Size = new System.Drawing.Size(0, 13);
             this.recordTwo.TabIndex = 42;
@@ -276,7 +278,7 @@
             // recordThree
             // 
             this.recordThree.AutoSize = true;
-            this.recordThree.Location = new System.Drawing.Point(485, 177);
+            this.recordThree.Location = new System.Drawing.Point(423, 177);
             this.recordThree.Name = "recordThree";
             this.recordThree.Size = new System.Drawing.Size(0, 13);
             this.recordThree.TabIndex = 43;
@@ -285,7 +287,7 @@
             // recordFour
             // 
             this.recordFour.AutoSize = true;
-            this.recordFour.Location = new System.Drawing.Point(546, 177);
+            this.recordFour.Location = new System.Drawing.Point(478, 177);
             this.recordFour.Name = "recordFour";
             this.recordFour.Size = new System.Drawing.Size(0, 13);
             this.recordFour.TabIndex = 44;
@@ -294,7 +296,7 @@
             // recordFive
             // 
             this.recordFive.AutoSize = true;
-            this.recordFive.Location = new System.Drawing.Point(633, 177);
+            this.recordFive.Location = new System.Drawing.Point(596, 177);
             this.recordFive.Name = "recordFive";
             this.recordFive.Size = new System.Drawing.Size(0, 13);
             this.recordFive.TabIndex = 45;
@@ -313,7 +315,7 @@
             // 
             this.record1TipLbl.AutoSize = true;
             this.record1TipLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.record1TipLbl.Location = new System.Drawing.Point(331, 157);
+            this.record1TipLbl.Location = new System.Drawing.Point(266, 157);
             this.record1TipLbl.Name = "record1TipLbl";
             this.record1TipLbl.Size = new System.Drawing.Size(70, 13);
             this.record1TipLbl.TabIndex = 47;
@@ -323,7 +325,7 @@
             // 
             this.record2TipLbl.AutoSize = true;
             this.record2TipLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.record2TipLbl.Location = new System.Drawing.Point(403, 157);
+            this.record2TipLbl.Location = new System.Drawing.Point(341, 157);
             this.record2TipLbl.Name = "record2TipLbl";
             this.record2TipLbl.Size = new System.Drawing.Size(67, 13);
             this.record2TipLbl.TabIndex = 48;
@@ -333,7 +335,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(472, 157);
+            this.label1.Location = new System.Drawing.Point(410, 157);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(67, 13);
             this.label1.TabIndex = 49;
@@ -343,7 +345,7 @@
             // 
             this.record4TipLbl.AutoSize = true;
             this.record4TipLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.record4TipLbl.Location = new System.Drawing.Point(543, 157);
+            this.record4TipLbl.Location = new System.Drawing.Point(499, 157);
             this.record4TipLbl.Name = "record4TipLbl";
             this.record4TipLbl.Size = new System.Drawing.Size(74, 13);
             this.record4TipLbl.TabIndex = 50;
@@ -353,7 +355,7 @@
             // 
             this.record5TipLbl.AutoSize = true;
             this.record5TipLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.record5TipLbl.Location = new System.Drawing.Point(621, 157);
+            this.record5TipLbl.Location = new System.Drawing.Point(606, 157);
             this.record5TipLbl.Name = "record5TipLbl";
             this.record5TipLbl.Size = new System.Drawing.Size(94, 13);
             this.record5TipLbl.TabIndex = 51;
@@ -363,7 +365,7 @@
             // 
             this.record6TipLbl.AutoSize = true;
             this.record6TipLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.record6TipLbl.Location = new System.Drawing.Point(716, 157);
+            this.record6TipLbl.Location = new System.Drawing.Point(717, 157);
             this.record6TipLbl.Name = "record6TipLbl";
             this.record6TipLbl.Size = new System.Drawing.Size(86, 13);
             this.record6TipLbl.TabIndex = 52;
@@ -372,7 +374,7 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.Gray;
-            this.panel3.Location = new System.Drawing.Point(401, 144);
+            this.panel3.Location = new System.Drawing.Point(339, 144);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1, 61);
             this.panel3.TabIndex = 54;
@@ -380,7 +382,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Gray;
-            this.panel2.Location = new System.Drawing.Point(470, 144);
+            this.panel2.Location = new System.Drawing.Point(408, 144);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1, 61);
             this.panel2.TabIndex = 55;
@@ -388,7 +390,7 @@
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.Gray;
-            this.panel5.Location = new System.Drawing.Point(540, 144);
+            this.panel5.Location = new System.Drawing.Point(478, 144);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(1, 61);
             this.panel5.TabIndex = 56;
@@ -396,7 +398,7 @@
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.Gray;
-            this.panel6.Location = new System.Drawing.Point(618, 144);
+            this.panel6.Location = new System.Drawing.Point(594, 144);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(1, 61);
             this.panel6.TabIndex = 57;
@@ -404,7 +406,7 @@
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.Gray;
-            this.panel7.Location = new System.Drawing.Point(715, 144);
+            this.panel7.Location = new System.Drawing.Point(716, 144);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(1, 61);
             this.panel7.TabIndex = 58;
@@ -412,10 +414,24 @@
             // panel8
             // 
             this.panel8.BackColor = System.Drawing.Color.Gray;
-            this.panel8.Location = new System.Drawing.Point(334, 153);
+            this.panel8.Location = new System.Drawing.Point(289, 153);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(461, 1);
+            this.panel8.Size = new System.Drawing.Size(479, 1);
             this.panel8.TabIndex = 59;
+            // 
+            // minimizeBtn
+            // 
+            this.minimizeBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("minimizeBtn.BackgroundImage")));
+            this.minimizeBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.minimizeBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.minimizeBtn.FlatAppearance.BorderSize = 0;
+            this.minimizeBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.minimizeBtn.Location = new System.Drawing.Point(735, 4);
+            this.minimizeBtn.Name = "minimizeBtn";
+            this.minimizeBtn.Size = new System.Drawing.Size(24, 24);
+            this.minimizeBtn.TabIndex = 12;
+            this.minimizeBtn.UseVisualStyleBackColor = true;
+            this.minimizeBtn.Click += new System.EventHandler(this.minimizeBtn_Click);
             // 
             // CancelRes
             // 
@@ -457,6 +473,7 @@
             this.Controls.Add(this.menuLbl);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "CancelRes";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CancelRes";
@@ -506,5 +523,6 @@
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.Button minimizeBtn;
     }
 }

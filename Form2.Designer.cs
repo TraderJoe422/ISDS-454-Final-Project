@@ -59,6 +59,10 @@
             this.hotelNameLbl = new System.Windows.Forms.Label();
             this.exitBtn = new System.Windows.Forms.Button();
             this.backBtn = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.minimizeBtn = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -66,7 +70,7 @@
             // 
             this.menuLbl.AutoSize = true;
             this.menuLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.menuLbl.Location = new System.Drawing.Point(294, 48);
+            this.menuLbl.Location = new System.Drawing.Point(290, 48);
             this.menuLbl.Name = "menuLbl";
             this.menuLbl.Size = new System.Drawing.Size(237, 31);
             this.menuLbl.TabIndex = 0;
@@ -125,7 +129,7 @@
             // testStartLbl
             // 
             this.testStartLbl.AutoSize = true;
-            this.testStartLbl.Location = new System.Drawing.Point(327, 258);
+            this.testStartLbl.Location = new System.Drawing.Point(357, 282);
             this.testStartLbl.Name = "testStartLbl";
             this.testStartLbl.Size = new System.Drawing.Size(55, 13);
             this.testStartLbl.TabIndex = 7;
@@ -134,7 +138,7 @@
             // testEndLbl
             // 
             this.testEndLbl.AutoSize = true;
-            this.testEndLbl.Location = new System.Drawing.Point(327, 296);
+            this.testEndLbl.Location = new System.Drawing.Point(357, 320);
             this.testEndLbl.Name = "testEndLbl";
             this.testEndLbl.Size = new System.Drawing.Size(52, 13);
             this.testEndLbl.TabIndex = 8;
@@ -152,7 +156,7 @@
             // roomNumLbl
             // 
             this.roomNumLbl.AutoSize = true;
-            this.roomNumLbl.Location = new System.Drawing.Point(537, 258);
+            this.roomNumLbl.Location = new System.Drawing.Point(545, 282);
             this.roomNumLbl.Name = "roomNumLbl";
             this.roomNumLbl.Size = new System.Drawing.Size(14, 13);
             this.roomNumLbl.TabIndex = 10;
@@ -162,7 +166,7 @@
             // 
             this.roomLbl.AutoSize = true;
             this.roomLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.roomLbl.Location = new System.Drawing.Point(476, 258);
+            this.roomLbl.Location = new System.Drawing.Point(484, 282);
             this.roomLbl.Name = "roomLbl";
             this.roomLbl.Size = new System.Drawing.Size(55, 13);
             this.roomLbl.TabIndex = 11;
@@ -171,78 +175,86 @@
             // testEpochStartLbl
             // 
             this.testEpochStartLbl.AutoSize = true;
-            this.testEpochStartLbl.Location = new System.Drawing.Point(524, 369);
+            this.testEpochStartLbl.Location = new System.Drawing.Point(555, 386);
             this.testEpochStartLbl.Name = "testEpochStartLbl";
             this.testEpochStartLbl.Size = new System.Drawing.Size(35, 13);
             this.testEpochStartLbl.TabIndex = 12;
             this.testEpochStartLbl.Text = "label1";
+            this.testEpochStartLbl.Visible = false;
             // 
             // testEpochEndLbl
             // 
             this.testEpochEndLbl.AutoSize = true;
-            this.testEpochEndLbl.Location = new System.Drawing.Point(521, 417);
+            this.testEpochEndLbl.Location = new System.Drawing.Point(552, 434);
             this.testEpochEndLbl.Name = "testEpochEndLbl";
             this.testEpochEndLbl.Size = new System.Drawing.Size(35, 13);
             this.testEpochEndLbl.TabIndex = 13;
             this.testEpochEndLbl.Text = "label2";
+            this.testEpochEndLbl.Visible = false;
             // 
             // testStartDateLbl
             // 
             this.testStartDateLbl.AutoSize = true;
-            this.testStartDateLbl.Location = new System.Drawing.Point(679, 369);
+            this.testStartDateLbl.Location = new System.Drawing.Point(710, 386);
             this.testStartDateLbl.Name = "testStartDateLbl";
             this.testStartDateLbl.Size = new System.Drawing.Size(35, 13);
             this.testStartDateLbl.TabIndex = 14;
             this.testStartDateLbl.Text = "label1";
+            this.testStartDateLbl.Visible = false;
             // 
             // testEndDateLbl
             // 
             this.testEndDateLbl.AutoSize = true;
-            this.testEndDateLbl.Location = new System.Drawing.Point(679, 417);
+            this.testEndDateLbl.Location = new System.Drawing.Point(710, 434);
             this.testEndDateLbl.Name = "testEndDateLbl";
             this.testEndDateLbl.Size = new System.Drawing.Size(35, 13);
             this.testEndDateLbl.TabIndex = 15;
             this.testEndDateLbl.Text = "label2";
+            this.testEndDateLbl.Visible = false;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(490, 351);
+            this.label1.Location = new System.Drawing.Point(521, 368);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(119, 13);
             this.label1.TabIndex = 16;
             this.label1.Text = "Start Date in Epoch";
+            this.label1.Visible = false;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(490, 395);
+            this.label2.Location = new System.Drawing.Point(521, 412);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(114, 13);
             this.label2.TabIndex = 17;
             this.label2.Text = "End Date in Epoch";
+            this.label2.Visible = false;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(646, 351);
+            this.label3.Location = new System.Drawing.Point(677, 368);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(120, 13);
             this.label3.TabIndex = 18;
             this.label3.Text = "Epoch to Start Date";
+            this.label3.Visible = false;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(649, 394);
+            this.label4.Location = new System.Drawing.Point(680, 411);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(115, 13);
             this.label4.TabIndex = 19;
             this.label4.Text = "Epoch to End Date";
+            this.label4.Visible = false;
             // 
             // nameResMsgLbl
             // 
@@ -294,10 +306,12 @@
             this.testBookingIDLbl.Size = new System.Drawing.Size(63, 13);
             this.testBookingIDLbl.TabIndex = 25;
             this.testBookingIDLbl.Text = "Booking_ID";
+            this.testBookingIDLbl.Visible = false;
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(76)))), ((int)(((byte)(49)))));
+            this.panel1.Controls.Add(this.minimizeBtn);
             this.panel1.Controls.Add(this.panel4);
             this.panel1.Controls.Add(this.hotelNameLbl);
             this.panel1.Controls.Add(this.exitBtn);
@@ -358,12 +372,59 @@
             this.backBtn.UseVisualStyleBackColor = true;
             this.backBtn.Click += new System.EventHandler(this.backBtn_Click);
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(345, 246);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(139, 13);
+            this.label5.TabIndex = 28;
+            this.label5.Text = "Reservation Check Out";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(285, 282);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(62, 13);
+            this.label6.TabIndex = 29;
+            this.label6.Text = "Check In:";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(285, 320);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(71, 13);
+            this.label7.TabIndex = 30;
+            this.label7.Text = "Check Out:";
+            // 
+            // minimizeBtn
+            // 
+            this.minimizeBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("minimizeBtn.BackgroundImage")));
+            this.minimizeBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.minimizeBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.minimizeBtn.FlatAppearance.BorderSize = 0;
+            this.minimizeBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.minimizeBtn.Location = new System.Drawing.Point(735, 4);
+            this.minimizeBtn.Name = "minimizeBtn";
+            this.minimizeBtn.Size = new System.Drawing.Size(24, 24);
+            this.minimizeBtn.TabIndex = 12;
+            this.minimizeBtn.UseVisualStyleBackColor = true;
+            this.minimizeBtn.Click += new System.EventHandler(this.minimizeBtn_Click);
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Moccasin;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.backBtn);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.testBookingIDLbl);
@@ -392,6 +453,7 @@
             this.Controls.Add(this.reservationBtn);
             this.Controls.Add(this.menuLbl);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form2";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Royal Luxury Hotel";
@@ -435,5 +497,9 @@
         private System.Windows.Forms.Label hotelNameLbl;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Button backBtn;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button minimizeBtn;
     }
 }

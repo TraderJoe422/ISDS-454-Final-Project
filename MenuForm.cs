@@ -58,10 +58,31 @@ namespace ISDS_454_Final_Project
             mouseDown = false;
         }
 
-
+        // - EXIT BUTTON -
         private void exitBtn_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        // - USER CLICKS VIEW RESERVATION -
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            ViewRes viewRes = new ViewRes();
+            viewRes.Show();
+            this.Hide();
+        }
+
+        private void minimizeBtn_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        // - USER CLICKS RECENT RESERVATIONS -
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+            RecentRes recentRes = new RecentRes();
+            recentRes.Show();
+            this.Hide();
         }
     }
 }
